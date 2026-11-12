@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NOVATECH - Registro de clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1>NOVATECH</h1>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="registro.html">Registro de clientes</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+    <h2>Registro de clientes</h2>
+
+    <form>
+
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            Cedula:<br>
+            <input type="text" required minlength="10" maxlength="10" pattern="[0-9]{10}" title="Escriba 10 numeros"><br>
+
+            Nombres:<br>
+            <input type="text" required minlength="3" maxlength="40"><br>
+
+            Apellidos:<br>
+            <input type="text" required minlength="3" maxlength="40"><br>
+
+            Fecha de nacimiento:<br>
+            <input type="date" required><br>
+
+            Edad:<br>
+            <input type="number" required min="18" max="100"><br>
+
+            Genero:<br>
+            <input type="radio" name="genero" required> Masculino
+            <input type="radio" name="genero"> Femenino
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            Correo electronico:<br>
+            <input type="email" required><br>
+
+            Telefono:<br>
+            <input type="text" required minlength="10" maxlength="10" pattern="[0-9]{10}" title="Escriba 10 numeros"><br>
+
+            Direccion:<br>
+            <input type="text" required minlength="5" maxlength="80"><br>
+
+            Ciudad:<br>
+            <select required>
+                <option value="">Seleccione</option>
+                <option>Quito</option>
+                <option>Guayaquil</option>
+                <option>Cuenca</option>
+                <option>Ambato</option>
+            </select>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Preferencias del cliente</legend>
+
+            Productos de interes:<br>
+            <input type="checkbox"> Computadoras
+            <input type="checkbox"> Impresoras
+            <input type="checkbox"> Accesorios
+            <input type="checkbox"> Celulares
+            <br><br>
+
+            Servicios de interes:<br>
+            <input type="checkbox"> Mantenimiento
+            <input type="checkbox"> Reparacion
+            <input type="checkbox"> Soporte tecnico
+            <br><br>
+
+            Fotografia del cliente (opcional):<br>
+            <input type="file">
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Confirmacion</legend>
+
+            <input type="checkbox" required> Acepto los terminos y condiciones
+            <br><br>
+
+            <button type="submit" class="registrar">Registrar</button>
+            <button type="reset" class="limpiar">Limpiar</button>
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
